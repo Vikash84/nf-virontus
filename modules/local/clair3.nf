@@ -57,6 +57,7 @@ process CLAIR3 {
     --haploid_sensitive \\
     --enable_long_indel \\
     --call_snp_only \\
+    --print_ref_calls \\
     --include_all_ctgs
 
   CLAIR3_VERSION=\$(head -n1 ${clair3_dir}/run_clair3.log | sed 's/^.*CLAIR3 VERSION: v//; s/ .*\$//')
